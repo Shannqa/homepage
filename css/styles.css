@@ -2,6 +2,21 @@
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   box-sizing: border-box;
 }
+:root, :root.light {
+  --primary-color: hsl(120, 90%, 16%);
+  --secondary-color: hsl(294, 77%, 20%);
+  --bg-secondary: var(--primary-color);
+  --bg-color: white;
+  --font-color: black;
+
+}
+:root.dark {
+  --primary-color: hsl(120deg 55% 54%);
+  --secondary-color: hsl(294, 71%, 35%);
+  --bg-color: hsl(120deg 7% 10%);
+  --bg-secondary: rgb(32 38 32);
+  --font-color: white;
+}
 
 body {
   margin: 0px;
@@ -9,9 +24,12 @@ body {
   flex-direction: column;
   justify-content: space-between;
   height: 100vh;
+  background-color: var(--bg-color);
+  color: var(--font-color);
 }
 
 header {
+  position: relative;
   display: flex;
   justify-content: center;
   margin-top: 10px;
@@ -37,15 +55,15 @@ p {
 }
 
 a, a:visited {
-  color: rgb(4, 80, 4);
+  color: var(--primary-color);
 }
 
 a:active, a:hover {
-  color:rgb(84, 12, 92)
+  color:var(--secondary-color);
 }
 
 footer {
-  background-color: rgb(4, 80, 4);
+  background-color: var(--bg-secondary);
   color:rgb(235, 235, 235);
   padding: 20px;
   margin: 40px 0px 0px 0px;
@@ -66,4 +84,10 @@ footer a:active, footer a:hover {
 .github {
   height: 18px;
   margin: 0 3px;
+}
+
+.theme-toggle {
+  top: 0px;
+  right: 8px;
+  position: absolute;
 }
