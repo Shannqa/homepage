@@ -26,27 +26,42 @@ body {
   height: 100vh;
   background-color: var(--bg-color);
   color: var(--font-color);
+  font-size: 1rem;
+  line-height: 1.5;
 }
 
 header {
   position: relative;
   display: flex;
   justify-content: center;
+  align-items: center;
   margin-top: 10px;
   padding-bottom: 5px;
   border-bottom: 2px solid rgb(4, 80, 4);
   box-shadow: 1px 1px 1px rgb(141, 141, 141);
+  flex: 0 0 80px;
 }
 
 .header-logo {
-  height: 71px; 
+  height: 3.5rem; 
+  
 }
 .header-text {
   font-family: "Great Vibes", cursive;
-  font-size: 55px;
+  font-size: 3rem;
   padding: 10px 0px 0px 0px;
 }
 
+main {
+  height: 100%;
+}
+
+h1 {
+  font-size: 1.75rem;
+}
+h2 {
+  font-size: 1.5rem;
+}
 h1, h2, h3, h4, h5, h6 {
   margin: 10px;
 }
@@ -64,10 +79,14 @@ a:active, a:hover {
 
 footer {
   background-color: var(--bg-secondary);
+  display: flex;
   color:rgb(235, 235, 235);
   padding: 20px;
   margin: 40px 0px 0px 0px;
-  text-align: center;
+  flex: 0 0 80px;
+  justify-content: center;
+  align-items: center;
+
 }
 footer img {
   margin-right: 3px;
