@@ -18,7 +18,10 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch": "webpack --watch",
     "start": "webpack serve --open",
-    "build": "webpack"
+    "build": "webpack",
+    "deploy-gh": "git push origin :gh-pages && git subtree push --prefix dist origin gh-pages",
+    "deploy": "git push origin main && git push origin :gh-pages && git subtree push --prefix dist origin gh-pages",
+    "deploy-gh-init": "git push origin && git subtree push --prefix dist origin gh-pages"
   },
   "keywords": [],
   "author": "Shannqa",
