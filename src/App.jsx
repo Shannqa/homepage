@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Introduction from "./components/Introduction.jsx";
 import Projects from "./components/Projects.jsx";
-import "./styles/index.css"
+import "./styles/main.css"
 
 function App() {
   return  (
