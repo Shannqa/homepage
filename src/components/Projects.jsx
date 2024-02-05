@@ -2,21 +2,21 @@ function Projects() {
   const projects = [
     {
       name: "Battleships Game",
-      img: "./dist/assets/battleships-180w.png",
+      img: "./assets/battleships-180w.png",
       url: "https://shannqa.github.io/battleships/",
       code: "https://github.com/Shannqa/battleships",
       desc: "Based on the well-known pen and paper battleships game. You can play against the AI."
     },
     {
       name: "CV Generator",
-      img: "./dist/assets/battleships-180w.png",
+      img: "./assets/battleships-180w.png",
       url: "https://cvgenerator-shannqa.netlify.app/",
       code: "https://github.com/Shannqa/cv-app",
       desc: "Fill out the form with your details and generate a fully-formatted CV which you can download as PDF."
     },
     {
       name: "Memory Game",
-      img: "./dist/assets/battleships-180w.png",
+      img: "./assets/battleships-180w.png",
       url: "https://memory-shannqa.netlify.app/",
       code: "https://github.com/Shannqa/memory-card",
       desc: "Simple game helping you to train your brain and memory. With cats. Lots of cats."
