@@ -1,22 +1,22 @@
-function Project() {
+function Projects() {
   const projects = [
     {
       name: "Battleships Game",
-      img: "",
-      url: "",
+      img: "./dist/assets/battleships-180w.png",
+      url: "https://shannqa.github.io/battleships/",
       code: "https://github.com/Shannqa/battleships",
       desc: "Based on the well-known pen and paper battleships game. You can play against the AI."
     },
     {
       name: "CV Generator",
-      img: "",
+      img: "./dist/assets/battleships-180w.png",
       url: "https://cvgenerator-shannqa.netlify.app/",
       code: "https://github.com/Shannqa/cv-app",
       desc: "Fill out the form with your details and generate a fully-formatted CV which you can download as PDF."
     },
     {
       name: "Memory Game",
-      img: "",
+      img: "./dist/assets/battleships-180w.png",
       url: "https://memory-shannqa.netlify.app/",
       code: "https://github.com/Shannqa/memory-card",
       desc: ""
@@ -27,18 +27,21 @@ function Project() {
     <div className="recent-projects">
       <h2>Recent Projects</h2>
       <div className="project-list">
-        {projects.map((project, index) => {
-          <section className="project" key={index}>
-            <img src={project.img} alt="Screenshot of the website" />
+        {projects.map((project) => (
+          <div className="project">
+            <a href={project.url}><img src={project.img} alt="Screenshot of the website" /></a>
             <h3>{project.name}</h3>
-            <a href={project.url}>Website</a>
-            <a href={project.code}>Code</a>
+            <div className="links">
+              <a href={project.url}>Website</a>
+              <span>||</span>
+              <a href={project.code}>Code</a>
+            </div>
             <p>{project.desc}</p>
-          </section>
-        })}
+          </div>
+        ))}
       </div>
     </div>  
   )
 }
 
-export default Project;
+export default Projects;
