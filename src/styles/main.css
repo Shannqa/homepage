@@ -17,6 +17,18 @@
   font-family: "Roboto", Arial, Helvetica, sans-serif;
 }
 
+.header {
+  align-self: flex-start;
+  background-color: #a6c9b6;
+  padding: 8px;
+  margin-bottom: 4px;
+}
+
+main {
+  border-left: 3px seagreen solid;
+  padding-left: 8px;
+}
+
 .introduction p {
   margin-bottom: 10px;
   line-height: 1.5;
@@ -54,6 +66,7 @@
 .project .links a,
 .project .links span {
   margin: 0 5px;
+  font-weight: bold;
 }
 
 .footer {
@@ -62,9 +75,8 @@
 }
 
 h1 {
-  font-size: 1.8rem;
+  font-size: 1.2rem;
   font-weight: bold;
-  margin: 10px;
 }
 
 h2 {
@@ -80,17 +92,17 @@ h3 {
 }
 
 a {
-  
+  color: #2d7c50;
 }
 
 a:visited {
-  
+  color: #2d7c50;
 }
 
 a:hover {
-  
+  color: #6a2ea6;
 }
 
 a:active {
-  
+  color: #893312;
 }

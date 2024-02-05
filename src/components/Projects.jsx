@@ -19,7 +19,7 @@ function Projects() {
       img: "./dist/assets/battleships-180w.png",
       url: "https://memory-shannqa.netlify.app/",
       code: "https://github.com/Shannqa/memory-card",
-      desc: ""
+      desc: "Simple game helping you to train your brain and memory. With cats. Lots of cats."
     }
   ];
   
