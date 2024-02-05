@@ -22,12 +22,39 @@ a:active {
 
 .project-list {
   display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
 }
 
 .project {
-  
+  border: 1px black solid;
+  box-shadow: 3px 3px 8px #868686;
+  max-width: 150px;
+  display: flex;
+  flex-direction: column;
 }
+
+.project img {
+  width: 120px;
+  height: 100px;
+}
+
 
 .footer {
   
+}
+
+h1 {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
 }
